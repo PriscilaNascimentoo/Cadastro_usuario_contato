@@ -16,6 +16,7 @@
         <title>Home</title>
     </head>
     <body>
+        
         <%@include file="WEB-INF/jspf/menu.jspf" %>
         <%
             int cont = 0;
@@ -25,6 +26,7 @@
             }
         %>
         <main>
+            
             <div class="team">
                 <h2>Total de cadastrados</h2>
                 <div class="pe">

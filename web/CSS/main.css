@@ -1,7 +1,3 @@
-/*
-* CSS feito por Giovana Aparecida
-* Para o 3° projeto de POO
-*/
 
 /*=========================
         TIPOGRAFIA
@@ -9,12 +5,17 @@
 body{
     margin:0px;
     padding: 0px;
-    font-family: 'Montserrat', sans-serif;
-    background-color: #ffffff;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    background-color: #e6e6e6;
+    font-size: 1em;	
 }
-h1, h2, h3, h4, h5, h6{
+ h2, h3, h4, h5, h6{
     text-transform: uppercase;
     font-weight: 70;
+}
+h1{
+	color:#4e4e4e;
+	font-size: 2.5em;
 }
 a{
     text-decoration: none;
@@ -30,12 +31,26 @@ a:hover{
            JSPF
 ===========================*/
 .nav{
-    background-color: #2f3542;
-    text-transform: uppercase;
-    left: 0px;
-    width: 100%;
-    position: relative;
-    text-align: center
+    background-color:#f7b600;
+    text-align: center;
+    padding:15;
+    	
+}
+
+.nav, .menu{
+	padding:10px;
+}
+.nav a:hover{
+	color: #f7b600;
+	background: #FFF;
+	text-decoration: none;
+
+}
+
+#menu a:link, #menu a:visited{
+    color:#FFF;
+    padding:8px 12px ;
+
 }
 
 .menu ul{
@@ -54,14 +69,6 @@ a:hover{
     text-align: center
     
 }
-.menu a:hover{
-    outline: none;
-    text-decoration: none;
-    transition: 0.3s;
-    color:#70a1ff;
-    text-align: center
-}
-
 .menu ul li{
     display: inline-block;
     text-align: center
@@ -71,6 +78,10 @@ a:hover{
 }
 .rodape a{
     font-size: 30px;
+}
+.branco{
+	color:white;
+        text-align: center;
 }
 /*=========================
            FIM-JSPF
@@ -88,9 +99,14 @@ a:hover{
 .pe {
     display: inline-block;
     box-sizing: border-box;
-    background-color: #dfe4ea;
-    
+    background: linear-gradient(to left, #808080, #A9A9A9,#C0C0C0, #D3D3D3);
+    width: 200px;
+    height: 200px;
+    border-radius:150px; 
+    padding: 25;
 }
+
+
 .pe p{
     align-items: center;
     padding: auto 20px;
@@ -106,22 +122,42 @@ a:hover{
 ===========================*/
 
 table{
-    border: 1px solid #000000;
-    border-spacing: 0px;
-    border-collapse: collapse;
+    background-color: White;
+    border: 3px solid;
+    border-collapse:separate ;
     width: 70%;
+    width: 600px;
 }
 
 th{
-    border: 1px solid #000000;
-    background-color: #dfe4ea;
+    border: 1px solid;
+    background-color:#808080;
     height: 50px;
 }
 
-td{
-    border: 1px solid #000000;
-    height: 25px;
+th,td{
+			
+    padding: 7px;
 }
+
+th{
+    text-transform: uppercase;
+    border-top:1px solid #999;
+    border-bottom: 1px solid #111;
+    text-align: center;
+    font-size: 80%;
+    letter-spacing: 0.1em;
+		
+}
+
+tr .alternado{
+   background-color: #6495ED;
+}
+
+tr:hover{
+    background: #D3D3D3;
+}
+
 
 /*=========================
          FIM-TABELA
@@ -146,3 +182,5 @@ input{
 /*=========================
          FIM-BOTÕES
 ===========================*/
+
+

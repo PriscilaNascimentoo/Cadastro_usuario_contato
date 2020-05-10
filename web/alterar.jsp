@@ -34,18 +34,21 @@
         <center>
         <h2>Alterar</h2>
          <form>
-            Índice:<br/>
+            Índice:
             <%= request.getParameter("index")%></br>
             <input type="hidden" name="index"
                    value="<%=request.getParameter("index")%>"/> <br/>
-            Nome:<br/>
-            <input type="text" name="nome"
+            
+            <label for="nome">Nome:</label><br/>
+            <input type="text" name="nome" placeholder="Digite o Nome"
                    value="<%=dados.getnome()%>"/><br/>
-            E-mail:<br/>
-            <input type="text" name="email"
+            
+            <label for="email">Email:</label><br/>
+            <input type="text" name="email" placeholder="Digite o e-mail"
                     value="<%=dados.getemail()%>"/><br/>
-            Telefone:<br/>
-            <input type="text" name="telefone"
+            
+            <label for="telefone">Telefone:</label><br/>
+            <input type="text" name="telefone" placeholder="Digite o telefone"
                    value="<%=dados.gettelefone()%>"/><br/><br/>
             
             <input type="submit" class="botão" name="set" value="Alterar"/>

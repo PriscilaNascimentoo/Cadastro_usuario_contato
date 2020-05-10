@@ -9,8 +9,8 @@ public class Db {
     public static ArrayList<Dados> getDados(){
             if(dados == null){
                 dados = new ArrayList<>();
-                dados.add(new Dados("Emperor's New Clothes", "Panic At The Disco", "Death Of a Bachelor"));
-                dados.add(new Dados("Bohemian Rhapsody", "Queen", "A Night At The Opera"));
+                dados.add(new Dados("Priscila do Nascimento", "priscila@gmail.com", "(13)354789541"));
+                dados.add(new Dados("Rogério de Lira", "rogerio@gmail.com", "(13)98745684"));
             }
             return dados;
     }
