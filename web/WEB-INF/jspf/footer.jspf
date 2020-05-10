@@ -4,6 +4,7 @@
 <footer>
     <div class="rodape">
         <hr>
-        <p>3° Projeto da aula de Orientação a Objetos &#169; Fatec Praia Grande</p>
+        <p>Programação Orientada a Objetos</p>
+        <p>&#169; Fatec Praia Grande</p>
     </div>
 </footer>

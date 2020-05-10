@@ -1,11 +1,11 @@
 <%-- 
-    Document   : index
-    Created on : 09/09/2019, 20:24:28
-    Author     : Denos
+    Document   : home
+    Created on : 10/05/2020, 16:26:43
+    Author     : Priscila Nascimento
 --%>
 
-<%@page import="br.com.fatecpg.musica.Db"%>
-<%@page import="br.com.fatecpg.musica.Dados"%>
+<%@page import="contato.Db"%>
+<%@page import="contato.Dados"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -24,17 +24,17 @@
             <table width="700" style="text-align: center">
                 <tr>
                     <th>Índice</th>
-                    <th>Musica</th>
-                    <th>Banda</th>
-                    <th>Disco</th>
+                    <th>Nome</th>
+                    <th>E-mail</th>
+                    <th>Telefone</th>
                     <th>Comandos</th>
                 </tr>
                 <%for (Dados c : Db.getDados()) {%>
                 <tr>
                     <td><%= Db.getDados().indexOf(c)%></td>
-                    <td><%= c.getMusica()%></td>
-                    <td><%= c.getBanda()%></td>
-                    <td><%= c.getDisco()%></td>
+                    <td><%= c.getnome()%></td>
+                    <td><%= c.getemail()%></td>
+                    <td><%= c.gettelefone()%></td>
                     <td>
                         <a href="alterar.jsp?index=<%=Db.getDados().indexOf(c)%>">Alterar</a>
                         <a href="excluir.jsp?index=<%=Db.getDados().indexOf(c)%>">Excluir</a>

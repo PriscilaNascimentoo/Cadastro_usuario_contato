@@ -1,11 +1,11 @@
 <%-- 
     Document   : home
-    Created on : 15/09/2019, 12:13:43
-    Author     : Cliente
+    Created on : 10/05/2020, 16:26:43
+    Author     : Priscila Nascimento
 --%>
 
-<%@page import="br.com.fatecpg.musica.Dados"%>
-<%@page import="br.com.fatecpg.musica.Db"%>
+<%@page import="contato.Db"%>
+<%@page import="contato.Dados"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -28,16 +28,16 @@
             <div class="team">
                 <h2>Total de cadastrados</h2>
                 <div class="pe">
-                    <h3>Musicos(Bandas)</h3>
-                    <p>N° de bandas: <%=cont%></p>
+                    <h3>Nome</h3>
+                    <p>N° de nome: <%=cont%></p>
                 </div>
                 <div class="pe">
-                    <h3>Albuns</h3>
-                    <p>N° de albuns: <%=cont%></p>
+                    <h3>E-mail</h3>
+                    <p>N° de email: <%=cont%></p>
                 </div>
                 <div class="pe">
-                    <h3>Musicas</h3>
-                    <p>N° de musicas: <%=cont%></p>
+                    <h3>Telefone</h3>
+                    <p>N° de telefone: <%=cont%></p>
                 </div>
             </div>
         </main>

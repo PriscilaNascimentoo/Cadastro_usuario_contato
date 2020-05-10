@@ -1,11 +1,11 @@
 <%-- 
-    Document   : excluir
-    Created on : Sep 15, 2019, 10:10:53 AM
-    Author     : guilherme
+     Document   : home
+    Created on : 10/05/2020, 16:26:43
+    Author     : Priscila Nascimento
 --%>
 
-<%@page import="br.com.fatecpg.musica.Db"%>
-<%@page import="br.com.fatecpg.musica.Dados"%>
+<%@page import="contato.Db"%>
+<%@page import="contato.Dados"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <%
@@ -34,7 +34,7 @@
         <center>
         <h2>Excluir</h2>
         <form>
-            Realmente deseja excluir o <br/>
+            Deseja realmente excluir o <br/>
             Indice<br/><b><%= request.getParameter("index") %></b><br/>
             <input type="hidden" name="index" value="<%= request.getParameter("index") %>"/> <br/>
             <input type="submit" class="botão" name="remove" value="Excluir"/>

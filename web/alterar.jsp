@@ -1,6 +1,6 @@
 
-<%@page import="br.com.fatecpg.musica.Db"%>
-<%@page import="br.com.fatecpg.musica.Dados"%>
+<%@page import="contato.Db"%>
+<%@page import="contato.Dados"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <%
@@ -14,10 +14,10 @@
         response.sendRedirect("index.jsp");
     }if(request.getParameter("set") != null){
         int index = Integer.parseInt(request.getParameter("index"));
-        String musica = request.getParameter("musica");
-        String banda = request.getParameter("banda");
-        String disco = request.getParameter("disco");
-        Dados c = new Dados(musica, banda, disco);
+        String nome = request.getParameter("nome");
+        String email = request.getParameter("email");
+        String telefone = request.getParameter("telefone");
+        Dados c = new Dados(nome, email, telefone);
         Db.getDados().set(index, c);
         response.sendRedirect("index.jsp");
     }
@@ -38,15 +38,15 @@
             <%= request.getParameter("index")%></br>
             <input type="hidden" name="index"
                    value="<%=request.getParameter("index")%>"/> <br/>
-            Musica:<br/>
-            <input type="text" name="musica"
-                   value="<%=dados.getMusica()%>"/><br/>
-            Banda:<br/>
-            <input type="text" name="banda"
-                    value="<%=dados.getBanda()%>"/><br/>
-            Disco:<br/>
-            <input type="text" name="disco"
-                   value="<%=dados.getDisco()%>"/><br/><br/>
+            Nome:<br/>
+            <input type="text" name="nome"
+                   value="<%=dados.getnome()%>"/><br/>
+            E-mail:<br/>
+            <input type="text" name="email"
+                    value="<%=dados.getemail()%>"/><br/>
+            Telefone:<br/>
+            <input type="text" name="telefone"
+                   value="<%=dados.gettelefone()%>"/><br/><br/>
             
             <input type="submit" class="botão" name="set" value="Alterar"/>
             <input type="submit" class="botão" name="cancel" value="Cancelar"/>
